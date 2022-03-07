@@ -2,7 +2,7 @@
 
 
 window.onload = function() {
-  const alpha = "aksjhdfiuwyer5bnkjzdhb982734bnsm,vhb901bkjavbkushadfkjashfsd";
+  const alpha = "jaeif";
 
   var x = 0,
     max = alpha.length,
