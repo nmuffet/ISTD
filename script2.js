@@ -2,9 +2,9 @@
 
 
 window.onload = function() {
-  const alpha = "jaeif";
+  const alpha = "ibaeo1j2afoeie1coayieoi3f";
 
-  var x = 0,
+  var x = 0, y=0, z=3, a=0, b=0, c=0, d=0, h=0, i=0, j=0
     max = alpha.length,
     one = document.getElementById("1");
     two = document.getElementById("2");
@@ -23,100 +23,100 @@ window.onload = function() {
     one.innerHTML = alpha[x];
     if (x == (max-1)) {
       x = 0;
-      setTimeout(incrementCounter1, 50);
+      setTimeout(incrementCounter1, 100);
     } else if (x < max) {
       ++x;
-      setTimeout(incrementCounter1, 50);
+      setTimeout(incrementCounter1, 100);
     }
   }
   function incrementCounter2() {
-    two.innerHTML = alpha[x];
-    if (x == (max-1)) {
-      x = 0;
-      setTimeout(incrementCounter2, 50);
-    } else if (x < max) {
-      ++x;
-      setTimeout(incrementCounter2, 50);
+    two.innerHTML = alpha[y];
+    if (y == (max-1)) {
+      y = 0;
+      setTimeout(incrementCounter2, 100);
+    } else if (y < max) {
+      ++y;
+      setTimeout(incrementCounter2, 100);
     }
   }
   function incrementCounter3() {
-    three.innerHTML = alpha[x];
-    if (x == (max-1)) {
-      x = 0;
-      setTimeout(incrementCounter3, 50);
-    } else if (x < max) {
-      ++x;
-      setTimeout(incrementCounter3, 50);
+    three.innerHTML = alpha[z];
+    if (z == (max-1)) {
+      z = 0;
+      setTimeout(incrementCounter3, 100);
+    } else if (z < max) {
+      ++z;
+      setTimeout(incrementCounter3, 100);
     }
   }
   function incrementCounter4() {
-    four.innerHTML = alpha[x];
-    if (x == (max-1)) {
-      x = 0;
-      setTimeout(incrementCounter4, 50);
-    } else if (x < max) {
-      ++x;
-      setTimeout(incrementCounter4, 50);
+    four.innerHTML = alpha[a];
+    if (a == (max-1)) {
+      a = 0;
+      setTimeout(incrementCounter4, 100);
+    } else if (a < max) {
+      ++a;
+      setTimeout(incrementCounter4, 100);
     }
   }
   function incrementCounter5() {
-    five.innerHTML = alpha[x];
-    if (x == (max-1)) {
-      x = 0;
-      setTimeout(incrementCounter5, 50);
-    } else if (x < max) {
-      ++x;
-      setTimeout(incrementCounter5, 50);
+    five.innerHTML = alpha[b];
+    if (b == (max-1)) {
+      b = 0;
+      setTimeout(incrementCounter5, 100);
+    } else if (b < max) {
+      ++b;
+      setTimeout(incrementCounter5, 100);
     }
   }
   function incrementCounter6() {
-    six.innerHTML = alpha[x];
-    if (x == (max-1)) {
-      x = 0;
-      setTimeout(incrementCounter6, 50);
-    } else if (x < max) {
-      ++x;
-      setTimeout(incrementCounter6, 50);
+    six.innerHTML = alpha[c];
+    if (c == (max-1)) {
+      c = 0;
+      setTimeout(incrementCounter6, 100);
+    } else if (c < max) {
+      ++c;
+      setTimeout(incrementCounter6, 100);
     }
   }
   function incrementCounter7() {
-    seven.innerHTML = alpha[x];
-    if (x == (max-1)) {
-      x = 0;
-      setTimeout(incrementCounter7, 50);
-    } else if (x < max) {
-      ++x;
-      setTimeout(incrementCounter7, 50);
+    seven.innerHTML = alpha[d];
+    if (d == (max-1)) {
+      d = 0;
+      setTimeout(incrementCounter7, 100);
+    } else if (d < max) {
+      ++d;
+      setTimeout(incrementCounter7, 100);
     }
   }
   function incrementCounter8() {
     eight.innerHTML = alpha[x];
     if (x == (max-1)) {
       x = 0;
-      setTimeout(incrementCounter8, 50);
+      setTimeout(incrementCounter8, 100);
     } else if (x < max) {
       ++x;
-      setTimeout(incrementCounter8, 50);
+      setTimeout(incrementCounter8, 100);
     }
   }
   function incrementCounter9() {
     nine.innerHTML = alpha[x];
     if (x == (max-1)) {
       x = 0;
-      setTimeout(incrementCounter9, 50);
+      setTimeout(incrementCounter9, 100);
     } else if (x < max) {
       ++x;
-      setTimeout(incrementCounter9, 50);
+      setTimeout(incrementCounter9, 100);
     }
   }
   function incrementCounter10() {
     ten.innerHTML = alpha[x];
     if (x == (max-1)) {
       x = 0;
-      setTimeout(incrementCounter10, 50);
+      setTimeout(incrementCounter10, 100);
     } else if (x < max) {
       ++x;
-      setTimeout(incrementCounter10, 50);
+      setTimeout(incrementCounter10, 100);
     }
   }
 
@@ -136,7 +136,6 @@ window.onload = function() {
 
 
 }
-
 /*
 window.onload = function() {
   const alpha = "aksjhdfiuwyer5bnkjzdhb982734bnsm,vhb901bkjavbkushadfkjashfsd";
@@ -149,9 +148,9 @@ window.onload = function() {
       list.innerHTML = alpha[x];
       if (x == (max-1)) {
         x = 0;
-        setTimeout(incrementCounter(), 50);
+        setTimeout(incrementCounter(), 100);
       } else if (x < max) {
-        setTimeout(incrementCounter(), 50);
+        setTimeout(incrementCounter(), 100);
         ++x;
       }
     }
@@ -177,11 +176,11 @@ for (let i=0; i<list.length; ++i)
       d.innerHTML = alphabet[alphatrack];
       if (i = (max-1)){
         i = 0;
-        //setTimeout(counter(d), 50);
+        //setTimeout(counter(d), 100);
       }
       else{
         ++alphatrack;
-     // setTimeout(counter(d), 50);
+     // setTimeout(counter(d), 100);
     }
     }
   }
