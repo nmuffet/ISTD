@@ -4,7 +4,36 @@ body{
 
     font-size:1.1em;
     line-height: 1.75em;
+    padding-top: 100px;
 }
+
+/*Navigation styles*/
+nav{
+    grid-column: 1/9;
+    font-size: 18px;
+    padding-left: 10%;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    justify-content: left;
+    }
+    
+    nav ul li {
+        margin: 0;
+        padding-right: 20px;
+    }
+    
+    nav a{
+        text-decoration: underline;
+        color: black;
+    }
+    
+    /*End navigation styles*/
+    
 
 h1{
     line-height:1em;
