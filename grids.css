@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass+Mono:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-size: 1rem;
+}
+
+.wrapper{
+    padding: 100px 10%;
+}
+
+section{
+    border-bottom: 1px solid grey;
+}
+
+/*Navigation styles*/
+nav{
+
+    font-size: 18px;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: left;
+    }
+    
+    nav ul li {
+        margin: 0;
+        padding-right: 20px;
+    }
+    
+    nav a{
+        text-decoration: underline;
+        color: black;
+    }
+    
+    /*End navigation styles*/
+h2{
+    font-size: 3.4rem;
+    line-height: 3.6rem;
+    font-family: 'IBM Plex Mono',monospace;
+    padding-bottom: 200px;
+    padding-top: 200px
+}
+
+p{
+    font-size: 1.25rem;
+    line-height: 2.2rem;
+    font-family: 'Degular',sans-serif;
+    padding-bottom: 50px;
+}
+
+.six{
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+}
+
+.six  div{
+    border: 1px solid black;
+    height: 100px;
+}
+.six h2{
+    grid-column: 1 / 4;
+    
+}
+
+.six p{
+    grid-column: 3/7;
+}
+
+h2.four{
+    grid-column: span 7;
+}
+
+p.two{
+    grid-column: 5/7;
+}
+
