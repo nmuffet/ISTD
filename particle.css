@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    background: hwb(31 0% 0%);
+
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div.text{
+    color: white;
+    font-family: 'Milka'sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    text-align: center;
+    text-justify: center;  
+}
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
