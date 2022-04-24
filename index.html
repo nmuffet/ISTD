@@ -12,8 +12,22 @@
     <script src="script.js"></script>
     <title>Part of a Pattern</title>
 </head>
-
+<div class="warning">
+    <p>I hope to make this project mobile responsive in the near future, but currently it can only be viewed on a wider screen. Please expand your window or visit the site on a laptop or desktop.<br><br>Thanks/sorry!<br>
+    &mdash;Nick</p>
+</div>
 <body>
+
+    <nav class="grid24">
+<ol class="twentyfour-wide">
+    <li><a href='index.html'>Part of a Pattern</a></li>
+<li><a href="Strategy.html">Strategy + Specifications</a></li>
+<li><a href='research.html'>Research + Process</a></li>
+
+
+</ol>
+
+    </nav>
 
     <!--Title Block-->
     <section class="grid24">
@@ -126,7 +140,9 @@
             <h2 class="twelve-wide seven-tall" style="grid-column-start: 9;">These issues are so closely intertwined
                 because
                 the same
-                systems that are driving inequality are also actively resisting climate action.</h2>
+                systems that are driving inequality are also actively resisting climate action.<sup><a href=' https://lareviewofbooks.org/article/dismantle-all-of-this-stuff-a-conversation-with-noam-chomsky/
+
+                    '>1               </a></sup></h2>
 
             <div class="two-tall two-wide shape randomshape green"></div>
             <div class="two-tall two-wide shape randomshape orange"></div>
@@ -151,7 +167,8 @@
 
             <h2 class="twelve-wide five-tall" style="grid-column-start: 5; grid-row-start: 10;">And inequality within
                 and among countries will,
-                in turn, be further exacerbated by climate change.</h2>
+                in turn, be further exacerbated by climate change.<sup><a href='https://blogs.worldbank.org/climatechange/when-poverty-meets-climate-change-critical-challenge-demands-cross-cutting-solutions
+'>2               </a></sup></h2>
             <div class="two-tall two-wide shape randomshape green"></div>
             <div class="two-tall two-wide shape randomshape orange"></div>
             <div class="two-tall two-wide shape randomshape orange"></div>
@@ -177,19 +194,22 @@
             <div class="twelve-wide">
                 <h3 class="small-italic">ISDG Goal 10</h3>
                 <h3>Reducing Inequality</h3>
-            
+
                 <p class=""><strong>In order for nations to flourish, equality and prosperity
                         must be
                         available to everyone &ndash; regardless of gender, race, religious beliefs or economic
                         status.</strong></p>
 
-                        <div class="more accordion"><p>+</p></div>
+                <div class="more accordion">
+                    <p>+</p>
+                </div>
 
-                
+
                 <div class='panel'>
-                    <p>Too much of the world&rsquo;s wealth is held by a very small group of people. This often leads to
+                    <p>Too much of the world&rsquo;s wealth is held by a <span class='nowrap'>very small</span> group of people. This often leads to
                         financial and social discrimination. When
-                        every individual is self sufficient, the entire world prospers.</p>
+                        every individual is self sufficient, the entire <span class='nowrap'>world prospers.</span><sup><a href='https://www.globalgoals.org/goals/10-reduced-inequalities/'
+                            >3               </a></sup> </p>
 
                     <p>The pandemic has set progress of this goal back by roughly 10 years. Inequality across the world
                         has
@@ -210,11 +230,12 @@
                         or 520,000 adults in the world, now owns 11% of all wealth, up from 7% in 1995. The billionaires
                         in
                         the
-                        world own 3.5% of all wealth, as compared to .5% in 1995, according to the report.</p>
+                        world own 3.5% of all <span class='nowrap'>wealth, as compared</span> to .5% in 1995, according to the report.<sup><a href='https://thehill.com/regulation/finance/584710-share-of-global-wealth-held-by-billionaires-climbs-during-pandemic/'
+                            >4               </a></sup></p>
                 </div>
             </div>
             <div class="twelve-wide wealth-container">
-                <h3>Wealth Distribution by Population %</h3>
+                <h3 style="padding-right: 0;">Wealth Distribution by Population %</h3>
                 <div id="wealth-distribution">
                     <div class="shape p1 orange"></div>
 
@@ -320,7 +341,7 @@
                     <div class="shape p33 green"></div>
                     <div class="shape p33 green"></div>
                 </div>
-                <caption>% wealth controlled</caption>
+                <h4 style="font-size: .888rem; font-weight: 500;">% wealth controlled</h4>
                 <div class="key">
                     <div>
                         <div class="shape orange"></div>
@@ -343,19 +364,26 @@
         </div>
 
         <div class="grid24" style="grid-auto-rows:auto">
-            <div id="climate-graph" class="shape twelve-wide twelve-tall">
-                <div class="climate-top green"></div>
-                <div class="climate-bottom darkblue"></div>
+           <div class="twelve-wide">
+            <h3>Climate Emission Levels</h3>
+            <div id="climate-graph">
+                <div class="climate-top"><p>2010 emission levels</p></div>
+
+                <div class="climate-now"><p>Where we are</p></div>
+                <div class="climate-need"><p>Where we need to be</p></div>
             </div>
+        </div>
             <div class="twelve-wide" style="grid-column: 13 / span 12;">
                 <h3 class="small-italic">ISDG Goal 13</h3>
                 <h3>Climate Action</h3>
 
-                <p><strong>According to scientists, global emissions should be cut to 45% below 2010
-                        levels by 2030 in order
-                        to limit global warming to 1.5&deg;C above pre -industrial levels.</strong></p>
+                <p><strong>According to scientists, global emissions <span class='nowrap'>should be cut</span> to 45% below 2010
+                        levels by 2030 <span class='nowrap'>in order
+                        to</span> limit global warming to 1.5&deg;C above <span class='nowrap'>pre-industrial</span> levels.</strong></p>
 
-                        <div class="more accordion"><p>+</p></div>
+                <div class="more accordion">
+                    <p>+</p>
+                </div>
 
                 <div class="panel">
                     <p>Climate change is a real and undeniable threat to our entire civilization. The effects are
@@ -375,10 +403,6 @@
                         emissions
                         from 70 developing countries rose by 14.4% in 2014.</p>
 
-                    <p class="pull-quote">Combatting the climate crisis requires us to rapidly transform the systems
-                        that
-                        propel
-                        our economy</p>
 
                     <p>Combatting the climate crisis requires us to rapidly transform the systems that propel our
                         economy,
@@ -393,7 +417,8 @@
                         current trends will impact how much work remains to be done by 2030 and 2050 to deliver a
                         zero-carbon
                         world in time. It also outlines the required shifts in supportive policies, innovations, strong
-                        institutions, leadership and social norms to unlock change.</p>
+                        institutions, leadership and social norms to unlock change.<sup><a href=' https://climateactiontracker.org/publications/state-of-climate-action-2021/'
+                            >5               </a></sup></p>
                 </div>
             </div>
         </div>
@@ -474,7 +499,9 @@
             </div>
 
             <div class="quote ten-wide">
-                <div class="more accordion"><p>+</p></div>
+                <div class="more accordion noam">
+                    <p>+</p>
+                </div>
 
                 <div class="panel">
                     <p>&ldquo;Institutions place tight constraints on what can happen. The CEO of
@@ -484,7 +511,7 @@
                         materials
                         that
                         come
-                        to him from his own scientists and engineers, and they&rsquo;ve known it for 50 years. . .
+                        to him from his own scientists and engineers, and they&rsquo;ve known it for 50 years&#8230;
                         Suppose a
                         different individual CEO came in and said, &lsquo;Let&rsquo;s tell the population the truth.
                         Let&rsquo;s
@@ -509,7 +536,9 @@
                         &lsquo;What
                         is
                         it
-                        about the structure of our institutions that is leading us in this direction?&rsquo;&rdquo;</p>
+                        about the structure of our institutions that is leading us in this direction?&rsquo;&rdquo;<sup><a href=' https://lareviewofbooks.org/article/dismantle-all-of-this-stuff-a-conversation-with-noam-chomsky/
+
+                            '>1               </a></sup></p>
                 </div>
 
 
@@ -593,7 +622,8 @@
                 produce their own pattern of behavior over time. It may be buffeted, constricted, triggered, or driven
                 by
                 outside forces. But the system&rsquo;s response to these forces is characteristic of itself, and that
-                response is seldom simple in the real world.</p>
+                response is seldom simple in the real world.<sup><a href='https://wtf.tw/ref/meadows.pdf'
+                    >6              </a></sup></p>
 
             <p class="twelve-wide two-tall" style="grid-column-start: 5; grid-row-start:9;"> Systems are difficult
                 because
@@ -606,7 +636,8 @@
                 almost invisible. Or we may live within these systems seeing only a few individual parts, making the
                 whole
                 easy-to-overlook. We might call these &ldquo;hidden&rdquo; systems&mdash; or gossamer or ethereal or
-                translucent systems.</p>
+                translucent systems.<sup><a href='http://www.dubberly.com/wp-content/uploads/2016/02/systems_literacy.pdf'
+                    >7             </a></sup></p>
 
             <p class="twelve-wide two-tall" style="grid-row-start:16; grid-column-start:5" style='margin-top: .5rem;'>
                 Systems thinking is a way of
@@ -758,7 +789,9 @@
 
                     <p class="pull-quote" ">Pouring
                         half the milk into a second pail gives you two smaller amounts of milk, but
-                        dividing the cow in half does not give you two smaller cows.</p>
+                        dividing the cow in half does not give you two smaller cows.<sup><a href=' https://www.academia.edu/3317732/Systems_one_An_introduction_to_systems_thinking
+
+                            '>8               </a></sup></p>
         
         
 
@@ -1299,7 +1332,7 @@
             <div class="shape notempty cycle-shape" style="grid-column-start: 22; grid-row-start:5;"></div>
             <div class='leadline' style="height:40rem; grid-row-start:6; grid-column-start:22;"></div>
 
-            <div class="shape notempty cycle-shape" style="grid-column-start: 3; grid-row-start:7;"></div>
+            <div class="shape notempty cycle-shape" style="grid-column-start: 2; grid-row-start:7; position: relative; left: .5rem;"></div>
 
 
         </div>
@@ -1316,13 +1349,15 @@
                         these do not necessarily make participants feel able to do anything about it; in fact, it may do
                         the reverse.</strong></p>
 
-                        <div class="more accordion"><p>+</p></div>
+                <div class="more accordion">
+                    <p>+</p>
+                </div>
 
                 <div class="panel">
-                    <p>Behind the scenes, many agents of change&mdash;at all organizational levels and in regions all
+                    <p>Behind the scenes, many agents of change &mdash; at all organizational levels and in regions all
                         over
                         the
-                        world&mdash;are struggling. At the same time, we are far from meeting the social and
+                        world &mdash; are struggling. At the same time, we are far from meeting the social and
                         environmental
                         challenges of our day; we need to unlock more collaboration and more innovation. Finding ways to
                         address
@@ -1330,7 +1365,9 @@
                         personal challenges change makers face is therefore important not only because it matters in and
                         of
                         itself,
-                        but also because it has the potential to drive more effective social change.</p>
+                        but also because it has the potential to drive more effective social change.<sup><a href=' https://ssir.org/articles/entry/connecting_individual_and_societal_change
+
+                            '>9               </a></sup></p>
 
                     <p>Instead of rallying us, climate despair asks us to give up. In a 2009 study in the UK by
                         researchers
@@ -1344,7 +1381,7 @@
                         &quot;climate change images can evoke powerful feelings of issue salience but these do not
                         necessarily
                         make
-                        participants feel able to do anything about it; in fact, it may do the reverse.&rdquo;</p>
+                        participants feel able to do anything about it; in fact, it may do the reverse.&rdquo;<sup><a href=' https://www.vice.com/en/article/j5w374/climate-despair-is-making-people-give-up-on-life'>10</a></sup></p>
                 </div>
             </div>
 
@@ -1353,16 +1390,17 @@
             <div class="twentyfour-wide" style="grid-column-start: 25; grid-row: 21/auto;">
                 <h2>&#8230;and that a few powerful people in
                     power are to blame.</h2>
-    
+
                 <div>
-    
+
                     <div>
                         <p> <strong>Most Americans who say there’s too much economic inequality in the country think the
                                 federal
                                 government and
-                                big business should play a role in reducing inequality. Smaller but sizable shares say state
+                                big business should play a role in reducing inequality. Smaller but sizable shares say
+                                state
                                 governments and
-                                wealthy individuals should have a lot of responsibility in this regard.</strong></p>
+                                wealthy individuals should have a lot of responsibility in <span class='nowrap'>this regard.</span><sup><a href='  https://www.pewresearch.org/social-trends/2020/01/09/views-on-reducing-economic-inequality/'>11</a></sup></strong></p>
                     </div>
                 </div>
             </div>
@@ -1374,21 +1412,22 @@
 
         <div class="grid48" style="grid-auto-rows:auto;">
 
-<div class="shape notempty" style="grid-column:1; grid-row: 1;"></div>
-<div class="leadline-h" style="grid-column:2/27; grid-row: 1;"></div>
-    <h2 class="fortyeight-wide" >We may think that it’s up to institutions larger than ourselves to solve these issues, but in reality, we don’t
-        trust them to do so.</h2>
+            <div class="shape notempty" style="grid-column:1; grid-row: 1;"></div>
+            <div class="leadline-h" style="grid-column:2/27; grid-row: 1;"></div>
+            <h2 class="fortyeight-wide">We may think that it’s up to institutions larger than ourselves to solve these
+                issues, but in reality, we don’t
+                trust them to do so.</h2>
 
-        <div class="shape notempty" style="grid-column:48; grid-row: 3;"></div>
-<div class="leadline-h" style="grid-column:22/48; grid-row: 3;"></div>
+            <div class="shape notempty" style="grid-column:48; grid-row: 3;"></div>
+            <div class="leadline-h" style="grid-column:22/48; grid-row: 3;"></div>
 
-    </div>
+        </div>
 
     </section>
 
     <section class="gore">
 
-    
+
         <div class="grid24" style="grid-auto-rows: auto;">
 
 
@@ -1425,40 +1464,49 @@
         <div class="quote ten-wide">
 
             <p><strong>It ignores the distribution of incomes and net worth. So that we have &mdash; when
-                GDP
-                goes up, people cheer &mdash; two percent, three percent, wow, four percent, and they think,
-                &lsquo;Great.&rsquo; But it is accompanied by vast increases in pollution, chronic underinvestment in
-                public
-                goods, the depletion of irreplaceable natural resources, and the worst inequality crisis we&rsquo;ve
-                seen in
-                more than 100 years</strong></p>
-            <div class="more accordion"><p>+</p></div>
-            <div class="panel">
-            <p>&ldquo;Now, capitalism is at the base of every successful economy and it balances supply and demand. It unlocks
-                the
-                higher fraction of human potential, and it's not going anywhere. But it needs to be reformed,
-                because
-                the way we measure what's valuable now ignores so-called &lsquo;negative externalities&rsquo; like
-                pollution. It also ignores positive externalities like investments in education, health care, mental
-                health
-                care, family services. It ignores the depletion of resources like groundwater and topsoil, and the web
-                of
-                living species. And it ignores the distribution of incomes and net worth. So that we have &mdash; when
-                GDP
-                goes up, people cheer &mdash; two percent, three percent, wow, four percent, and they think,
-                &lsquo;Great.&rsquo; But it is accompanied by vast increases in pollution, chronic underinvestment in
-                public
-                goods, the depletion of irreplaceable natural resources, and the worst inequality crisis we&rsquo;ve
-                seen in
-                more than 100 years that is threatening the future of both capitalism and democracy. So, we have to
-                change
-                it.&rdquo;</p>
+                    GDP
+                    goes up, people cheer &mdash; 2%, 3%, wow, 4%, and they think,
+                    &lsquo;Great.&rsquo; But it is accompanied by vast increases in pollution, chronic underinvestment
+                    in
+                    public
+                    goods, the depletion of irreplaceable natural resources, and the worst inequality crisis we&rsquo;ve
+                    seen in
+                    more than 100 years</strong></p>
+            <div class="more accordion">
+                <p>+</p>
             </div>
-            
+            <div class="panel">
+                <p>&ldquo;Now, capitalism is at the base of every successful economy and it balances supply and demand.
+                    It unlocks
+                    the
+                    higher fraction of human potential, and it's not going anywhere. But it needs to be reformed,
+                    because
+                    the way we measure what's valuable now ignores so-called &lsquo;negative externalities&rsquo; like
+                    pollution. It also ignores positive externalities like investments in education, health care, mental
+                    health
+                    care, family services. It ignores the depletion of resources like groundwater and topsoil, and the
+                    web
+                    of
+                    living species. And it ignores the distribution of incomes and net worth. So that we have &mdash;
+                    when
+                    GDP
+                    goes up, people cheer &mdash; 2%, 3%, wow, 4%, and they think,
+                    &lsquo;Great.&rsquo; But it is accompanied by vast increases in pollution, chronic underinvestment
+                    in
+                    public
+                    goods, the depletion of irreplaceable natural resources, and the worst inequality crisis we&rsquo;ve
+                    seen in
+                    more than 100 years that is threatening the future of both capitalism and democracy. So, we have to
+                    change
+                    it.&rdquo;<sup><a href=' https://lareviewofbooks.org/article/dismantle-all-of-this-stuff-a-conversation-with-noam-chomsky/
+
+                        '>1               </a></sup></p>
+            </div>
+
         </div>
     </section>
 
-   <!--
+    <!--
     <div class="quote">
         <p>&#8230;Any kind of large, integrated institutional information-processing unit can only see the kinds of
             information they can process. And the kinds of information they can process are things like this&mdash;
@@ -1474,11 +1522,12 @@
     </div>
 -->
 
-<section class="expectations">
-    <div class="grid24">
-    <h2 class="twelve-wide eight-tall vert-center" style="grid-column-start: 13;">So how do we expect change to happen?</h2>
-    <div class="shape random cycle-shape eight-tall eight-wide" style="grid-column-start: 1;"></div>
-<!--
+    <section class="expectations">
+        <div class="grid24">
+            <h2 class="twelve-wide eight-tall vert-center" style="grid-column-start: 13;">So how do we expect change to
+                happen?</h2>
+            <div class="shape random cycle-shape eight-tall eight-wide" style="grid-column-start: 1;"></div>
+            <!--
     <div class="quote twelve-wide">
         <p>The job of people like you, activists on the streets, people who are trying to change the world for the
             better, is to dismantle all of this stuff. It is to get people to see what is not that far from right in
@@ -1491,76 +1540,453 @@
     </div>
 </div>
 -->
-</div>
-</section>
+        </div>
+    </section>
 
-<section class="rolling">
-    <div class="grid24" style="position: relative;">
+    <section class="rolling">
+        <div class="grid24" style="position: relative;">
 
-        <h2>Systems are made up of <span class='letterCycle-i'>i</span>nd<span class='letterCycle-i'>i</span>v<span class='letterCycle-i'>i</span>duals. The goal of the <span class='letterCycle-i'>i</span>nd<span class='letterCycle-i'>i</span>v<span class='letterCycle-i'>i</span>dual shouldn’t be to create change but to <span class='letterCycle-i'>i</span>nsp<span class='letterCycle-i'>i</span>re
-            others. To be part of a pattern.</h2>
-      
-  <div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover   random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div>  <div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover tri tri-down-right orange two-tall two-wide" style="opacity: 1; z-index:10;"></div><div class="shape rollover random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div>  <div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div>  <div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div><div class="shape rollover  random two-tall two-wide"></div>
-    </div>
+            <h2>Systems are made up of <span class='letterCycle-i'>i</span>nd<span class='letterCycle-i'>i</span>v<span
+                    class='letterCycle-i'>i</span>duals. The goal of the <span class='letterCycle-i'>i</span>nd<span
+                    class='letterCycle-i'>i</span>v<span class='letterCycle-i'>i</span>dual shouldn’t be to create
+                change but to <span class='letterCycle-i'>i</span>nsp<span class='letterCycle-i'>i</span>re
+                others. To be part of a pattern.</h2>
 
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover   random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover tri tri-down-right orange two-tall two-wide" style="opacity: 1; z-index:10;">
+            </div>
+            <div class="shape rollover random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+            <div class="shape rollover  random two-tall two-wide"></div>
+        </div>
+
+
+
+    </section>
+
+
+    <section class="donella-header" style="padding-top: 25rem; padding-bottom: 25rem;">
+        <div class="grid48" style="grid-auto-rows:auto;">
+            <div class="shape notempty" style="grid-column-start: 41;"></div>
+            <div class="shape notempty" style="grid-column-start: 42;"></div>
+            <div class="shape notempty" style="grid-column-start: 43;"></div>
+            <div class="shape notempty" style="grid-column-start: 44;"></div>
+            <div class="shape notempty" style="grid-column-start: 45;"></div>
+            <div class="shape notempty" style="grid-column-start: 46;"></div>
+
+            <h2 class="fortyeight-wide">
+                Donella Meadows lists 12 places to intervene in a system, but her top 5 may be the most inspiring and
+                actionable
+                for us.<sup><a href='https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/'>12              </a></sup>
+            </h2>
+            <div class="shape notempty" style="grid-column-start: 3;"></div>
+            <div class="shape notempty"></div>
+            <div class="shape notempty"></div>
+            <div class="shape notempty"></div>
+            <div class="shape notempty"></div>
+            <div class="shape notempty"></div>
+        </div>
+    </section>
+
+
+
+
+    <section class="donella-graphic" style="padding-bottom: 10rem;">
+
+
+
+        <div class="grid24" style="margin-bottom: 3rem; grid-auto-rows:auto;">
+
+
+            <h2 class="twentyfour-wide title">Places to Intervene <span class='nowrap'>in a System</span></h2>
+
+        </div>
+
+        <div class="grid24">
+
+            <div class="one twelve-wide twelve-tall square" style="grid-row-start: 1; position: relative;">
+
+
+                <div class="diag-right"
+                    style="width: 100%; height: 100%; position: absolute; z-index:-10; opacity: .6;"></div>
+
+                <div>
+                    <h4>5</h4>
+                    <h3>System Rules</h3>
+                    <p>Such as incentives, punishments, <span class='nowrap'>or constraints.</span></p>
+                    <div class="graphic1">
+                        <div class="shape darkblue"></div>
+                        <div class="shape darkblue"></div>
+                        <div class="shape darkblue"></div>
+                        <div class="shape darkblue"></div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="two twelve-wide twelve-tall circle " style="grid-row-start: 7; position: relative;">
+
+                <div class="vert-green circle" style="width: 100%; height: 100%; position: absolute; z-index:-10;">
+                </div>
+                <div>
+                    <h4>4</h4>
+                    <h3>Self-organization</h3>
+                    <p>The power to add, change, evolve, or adapt system structures from within. </p>
+                    <div class="graphic2">
+                        <div class="shape darkblue"></div>
+                        <div class="shape darkblue anim"></div>
+                        <div class="shape darkblue"></div>
+                        <div class="shape darkblue anim"></div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="three twelve-wide twelve-tall circle " style="grid-row-start: 13; position: relative;">
+
+
+                <div class="polka-darkblue circle" style="width: 100%; height: 100%; position: absolute; z-index:-10;">
+                </div>
+
+
+                <div>
+                    <h4>3</h4>
+                    <h3>Goals</h3>
+                    <p>Altering the true objectives the system works towards.</p>
+                    <div class="graphic3">
+                        <div class="shape darkblue"></div>
+
+                    </div>
+                    <div class="graphic3">
+                        <div class="shape darkblue"></div>
+                        <div class="shape darkblue"></div>
+
+                    </div>
+                    <div class="graphic3">
+                        <div class="shape darkblue"></div>
+                        <div class="shape darkblue"></div>
+                        <div class="shape darkblue"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="four twelve-wide twelve-tall " style="grid-row-start: 19; position: relative;">
+
+                <div class="diag-left-orange anim" style="width: 100%; height: 100%; position: absolute; z-index:-10;">
+                </div>
+
+                <div>
+                    <h4>2</h4>
+                    <h3>Mindset</h3>
+                    <p>Changing the paradigm out of which the system — its goals, structure, rules, delays, parameters —
+                        arises.</p>
+                    <div class="graphic1">
+                        <div class="shape darkblue"></div>
+                        <div class="shape darkblue"></div>
+                        <div class="shape darkblue"></div>
+                        <div class="shape darkblue"></div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="twelve-wide twelve-tall" style=" grid-row-start: 25; grid-column-start: 1; position: relative;">
+
+                <div class="graphic5b" style="width: 100%; height: 100%; position: absolute; z-index:-10;">
+                </div>
+
+                <div>
+                    <h4>1</h4>
+                    <h3>Transcending Paradigms</h3>
+                    <p>Recognizing that there are no true paradigms and thus granting the power to shed or adopt new
+                        worldviews.</p>
+                    <div class="graphic1">
+                        <div class="shape random"></div>
+                        <div class="shape random"></div>
+                        <div class="shape random"></div>
+                        <div class="shape random"></div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+    <section class="end" style="padding-bottom: 15rem;">
+        <div class="grid24 quote" style="grid-auto-rows:auto;">
+            <div class="twelve-wide" style="grid-column-start: 13;">
+                <p><strong>Paradigms are the sources of systems. From them, from shared social agreements about the
+                        nature of
+                        reality,
+                        come system goals and information flows, feedbacks, stocks, flows and everything else about
+                        systems.</strong></p>
+                <div class="more accordion">
+                    <p>+</p>
+                </div>
+
+
+
+                <div class="panel" style="grid-column-start: 13;">
+                    <p>
+                        &ldquo;There is a difference between nouns and verbs. Money measures something real and has real
+                        meaning
+                        (therefore people who are paid less are literally worth less). Growth is good. Nature is a stock
+                        of
+                        resources to be converted to human purposes. Evolution stopped with the emergence of Homo
+                        sapiens. One
+                        can
+                        “own” land. Those are just a few of the paradigmatic assumptions of our current culture, all of
+                        which
+                        have
+                        utterly dumfounded other cultures, who thought them not the least bit obvious.</p>
+
+                    <p>Paradigms are the sources of systems. From them, from shared social agreements about the nature
+                        of
+                        reality,
+                        come system goals and information flows, feedbacks, stocks, flows and everything else about
+                        systems.</p>
+
+                    <p>But there&rsquo;s nothing physical or expensive or even slow in the process of paradigm change.
+                        In a
+                        single
+                        individual it can happen in a millisecond. All it takes is a click in the mind, a falling of
+                        scales from
+                        eyes, a new way of seeing. Whole societies are another matter &mdash; they resist challenges to
+                        their
+                        paradigm harder than they resist anything else.&rdquo;</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="grid24" style="grid-auto-rows: auto;">
+            <div class="quote-container eighteen-wide" style="grid-column-start: 4;">
+
+                <div style="position: absolute; top: 13rem;">
+                    <div class="flex-quote">
+                        <div class="shape tri teal tri-up-left"></div>
+                        <div class="shape tri teal tri-up-left"></div>
+
+                    </div>
+
+                    <p class="pull-quote" ">In a nutshell, you keep pointing at the anomalies and failures in the old paradigm, you keep
+                    coming
+                    yourself, and loudly and with assurance from the new one, you insert people with the new paradigm in
+                    places
+                    of public visibility and power. You don’t waste time with reactionaries; rather you work with active
+                    change
+                    agents and with the vast middle ground of people who are open-minded.</p>
     
     
-</section>
-    <h2>
-        Donella Meadows lists 12 places to intervene in a system, but her top 5 may be the most inspiring and
-        actionable
-        for us.
-    </h2>
 
-    <ol>
-        <li>5. The rules of the system (such as incentives, punishments, constraints).</li>
-        <li>4. The power to add, change, evolve, or self-organize system structure.
-        <li>3. The goals of the system.
-        </li>
-        <li>2. The mindset or paradigm out of which the system — its goals, structure, rules, delays, parameters —
-            arises.</li>
-        <li>1. The power to transcend paradigms.</li>
-    </ol>
+                <div class=" flex-quote" style="justify-content: end;">
 
-    <h2>
-        The power to change the system lies in the power to shift the paradigm they exist in.
-    </h2>
+                    <div class="shape tri teal tri-down-right"></div>
+                    <div class="shape tri teal tri-down-right"></div>
 
-    <div class="quote">
-        <p>
-            &ldquo;There is a difference between nouns and verbs. Money measures something real and has real meaning
-            (therefore people who are paid less are literally worth less). Growth is good. Nature is a stock of
-            resources to be converted to human purposes. Evolution stopped with the emergence of Homo sapiens. One
-            can
-            “own” land. Those are just a few of the paradigmatic assumptions of our current culture, all of which
-            have
-            utterly dumfounded other cultures, who thought them not the least bit obvious.&rdquo;</p>
-        <p class="attrib">&mdash;Donella Meadows</p>
-    </div>
-    <div>
-        <p>Paradigms are the sources of systems. From them, from shared social agreements about the nature of
-            reality,
-            come system goals and information flows, feedbacks, stocks, flows and everything else about systems.</p>
+                </div>
 
-        <p>But there&rsquo;s nothing physical or expensive or even slow in the process of paradigm change. In a
-            single
-            individual it can happen in a millisecond. All it takes is a click in the mind, a falling of scales from
-            eyes, a new way of seeing. Whole societies are another matter &mdash; they resist challenges to their
-            paradigm harder than they resist anything else.</p>
-    </div>
-    <div class="pull-quote">
-        <p>&ldquo;In a nutshell, you keep pointing at the anomalies and failures in the old paradigm, you keep
-            coming
-            yourself, and loudly and with assurance from the new one, you insert people with the new paradigm in
-            places
-            of public visibility and power. You don’t waste time with reactionaries; rather you work with active
-            change
-            agents and with the vast middle ground of people who are open-minded.&rdquo;</p>
-    </div>
+                <p class="attrib">&mdash;Donella Meadows</p>
 
-    <footer>
-        <p>ISTD Documentation</p>
-    </footer>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
 </body>
+
+
 
 </html>

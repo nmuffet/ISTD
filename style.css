@@ -54,7 +54,7 @@ table {
 *{
     box-sizing: border-box;
 }
-sup {font-size:x-small; vertical-align:super;}
+sup {font-size:x-small; vertical-align:top; position:relative; top:-.5rem;}
 img{
     max-width: 100%;
 }
@@ -65,16 +65,14 @@ html{
 }
 body {
   font-family: 'fantabular-sans-mvb', mono;
-  line-height: 1.6875rem;
+  line-height: 1.5rem;
   color: #003333;
   background-color:#fffbf2;
   padding-top: .8888rem;
   --num-cols: 24;
   --col-width: 2rem;
 }
-h1, h2, h3, h4, p{
-  
-}
+
 
 h1{
     font-family: 'fantabular-mvb', mono;
@@ -88,7 +86,7 @@ h1{
   grid-row: auto / span 2;
 }
 h2{
-  font-family: 'fantabular-mvb', monospace;
+  font-family: 'fantabular-mvb', mono;
   font-weight: 400;
   font-style:italic;
   font-size: 1.7777rem;
@@ -103,13 +101,13 @@ h2.full-center {
 }
 
 h3{
-  font-family: 'fantabular-sans-mvb' monospace;
+  font-family:'fantabular-mvb', mono;
   font-weight: bold;
   font-size: 1.125rem;
   line-height: 1.55rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  padding-bottom: .5rem;
+  letter-spacing: 2px;
+  padding: 0 2rem .5rem 0rem;
   
 }
 
@@ -118,11 +116,35 @@ p{
   padding: 0 2rem 1rem 2rem;
 }
 
-strong{
+
+
+p strong{
   font-size: .888888rem;
   font-weight: 500;
   color:#ff6633;
 }
+
+i{
+  font-style:italic;
+}
+
+a{
+  text-decoration: none;
+}
+
+sup{
+  font-size:.666rem;
+}
+
+.pull-quote sup a{
+  color:#ff6633;
+}
+
+ strong sup a{
+  color:#ff6633;
+}
+
+
 
 .panel{
   display: none;
@@ -195,6 +217,7 @@ margin-right: 0
   font-size: 1.333rem;
   padding-top: 1rem;
   text-align: center;
+  font-family: fantabular-mvb;
 }
 
 .row2{
@@ -302,6 +325,11 @@ margin-right: 0
 
 .sixteen-wide{
   grid-column: auto / span 16;
+
+}
+
+.eighteen-wide{
+  grid-column: auto / span 18;
 
 }
 
@@ -517,6 +545,43 @@ opacity: .125;
 background: repeating-linear-gradient( 45deg, #336633, #336633 2.25px, transparent 2.25px, transparent 1rem );
   }
 
+  .vert-green{
+    background-color: #fffbf2;
+opacity: .2;
+background: repeating-linear-gradient( 90deg, #336633, #336633 2.25px, transparent 2.25px, transparent 1rem );
+  }
+
+  .diag-left-orange{
+    background-color: #fffbf2;
+opacity: .35;
+background: repeating-linear-gradient( -45deg, #ff8359, #ff8359 4.5px, transparent 4.5px, transparent 2rem );
+  }
+
+  .vert-orange{
+    background-color: #fffbf2;
+opacity: .2;
+background: repeating-linear-gradient( 90deg, #ff8359, #ff8359 4.5px, transparent 4.5px, transparent 1rem );
+  }
+
+  .h-orange{
+    background-color: #fffbf2;
+opacity: .2;
+background: repeating-linear-gradient(#ff8359, #ff8359 4.5px, transparent 4.5px, transparent 1rem );
+  }
+
+.polka-darkblue{
+  background-color: transparent;
+opacity: .4;
+background-image: radial-gradient(#325a59 2px, transparent 2px);
+background-size: 28px 28px;
+}
+
+.polka-teal{
+  background-color: transparent;
+opacity: .8;
+background-image: radial-gradient(#b1e3ce 2px, transparent 2px);
+background-size: 28px 28px;
+}
   
 
   /*end patterns*/
@@ -550,10 +615,10 @@ background: repeating-linear-gradient( 45deg, #336633, #336633 2.25px, transpare
   display: block;
   width: 0;
   height: 0;
-  margin-top:-800px;
+  margin-top:-1000px;
   
-  border-top: 800px solid transparent;
-  border-right: 800px solid;
+  border-top: 1000px solid transparent;
+  border-right: 1000px solid;
 }
 
 .tri-up-left{
@@ -574,6 +639,29 @@ background: repeating-linear-gradient( 45deg, #336633, #336633 2.25px, transpare
 section{
   padding-bottom: 3.5rem;
 }
+
+nav ol{
+  display: flex;
+  justify-content:end
+}
+
+nav ol li{
+  margin-left: 4rem;
+  font-size: .888rem;
+}
+
+nav ol li a{
+  color:#003333;
+
+}
+
+nav ol li a:hover{
+  border-bottom: 1px solid #ff6633;
+  color:#ff6633;
+
+}
+
+
 .big-issues{
   position: relative;
 }
@@ -612,19 +700,41 @@ section{
   margin-right: .5rem;
 }
 
+.wealth-container p{
+  padding-left: .5rem;
+}
+
 #climate-graph{
   display: flex;
   flex-direction:column;
-  border: #003333 1px solid;
+  justify-content: end;
+  height: 630px;
 
+}
+
+#climate-graph p{
+color: #003333;
+font-weight: 500;
 }
 
 #climate-graph .climate-top{
-  height:29%;
+  height: 6%;
+  background-color: #ff8359;
 }
 
-#climate-graph .climate-bottom{
+#climate-graph .climate-now{
+  height:29%;
+  background-color: #b1e3ce;
+}
+
+#climate-graph .climate-need{
   height:65%;
+  background-color: #325a59;
+
+}
+
+#climate-graph .climate-need p{
+  color:#fffbf2
 }
 
 .no-one .top{
@@ -649,6 +759,12 @@ transition: ease-out .5s;
     bottom: 0;
     }
 
+
+.scale h2{
+padding: 0 4rem 0 2rem;
+
+}
+
 .systems-intro h2{
   padding: 0;
   text-align: center;
@@ -669,8 +785,71 @@ transition: ease-out .5s;
   line-height: 6rem;
     color:#ff6633; 
     opacity: 1;
-    z-index:-5;
 }
+
+.donella-graphic .title{
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #ff6633;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: .25rem dotted #ff6633;
+}
+.donella-graphic p{
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.donella-graphic .twelve-wide{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color:#003333;
+}
+
+.donella-graphic h3{
+  font-size: 1.7777rem;
+  line-height: 3rem;
+  text-align: center;
+  color:#ff6633;
+}
+
+.donella-graphic .graphic1, .graphic2, .graphic3, .graphic4, .graphic5{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.donella-graphic .graphic1 .shape, .graphic2 .shape, .graphic3 .shape, .graphic4 .shape, .graphic5 .shape{
+  width: 2rem;
+  height: 2rem;
+  margin: .25rem .5rem;
+  
+
+}
+.donella-graphic h3{
+  padding-left: 0;
+  padding-right: 0;
+}
+.donella-graphic h4{
+  font-weight:100;
+  font-style: italic;
+  font-size:2rem;
+  text-align: center;
+position: relative;
+bottom: 1rem;
+}
+
+.anim{
+  animation: square-circle 2s infinite;
+  animation-timing-function:ease-in-out ;}
+
 
 
 /*end by section*/
@@ -692,14 +871,23 @@ transition: ease-out .5s;
   /*animation: wiggle .1s infinite alternate;*/
 }
 
+.more.noam{
+  width: 1rem;
+  height: 1rem;
+  background-color:#003333;
+  position: relative;
+  top: 17.75rem;
+  /*animation: wiggle .1s infinite alternate;*/
+}
+
 .goals .more, .scale .more{
   position: relative;
-  bottom: 7.25rem;
+  bottom: 6.75rem;
 }
 
 .gore .more{
   position: relative;
-  bottom: 19.25rem;
+  bottom: 15.75rem;
 }
 .more:hover{
   background-color: #66ccac;
@@ -708,12 +896,17 @@ transition: ease-out .5s;
 
 .more p{
   position: relative;
-  bottom: 7.5px;
+  bottom: 5px;
   padding: 0;
   margin: 0;
   color:#fffbf2;
   text-align: center;
   font-weight: 500;
+}
+
+.end .more{
+  position: relative;
+  bottom: 8.25rem;
 }
 
 @keyframes wiggle {
@@ -723,3 +916,125 @@ transition: ease-out .5s;
 /*
 animation: wiggle .1s infinite alternate;
 */
+
+@keyframes square-circle {
+  0% { border-radius: 0; }
+  25% {border-radius: 100%;  }
+}
+
+
+
+
+
+/*STRATEGY STYLES*/
+#strategy h1, #strategy h2,#strategy h3,#strategy h4,#strategy p{
+  padding-left: 0;
+}
+
+
+#strategy .row{
+  
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), var(--col-width));
+  grid-auto-rows: auto;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#strategy h1{
+  font-size: 2.5rem;
+  padding-top: 5rem;
+  line-height: 3rem;
+}
+
+#strategy h3{
+  border-top: solid 1px #003333;
+  margin-right: 4rem;
+}
+
+#strategy h2 strong{
+  font-weight: 800;
+  color:#ff6633;
+}
+
+
+
+
+
+/*END STRATEGY STYLES*/
+
+/*RESEARCH STYLES*/
+#research h1, #research h2,#research h3,#research h4,#research p{
+  padding-left: 0;
+}
+
+
+#research .row{
+  
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), var(--col-width));
+  grid-auto-rows: auto;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#research h1{
+  font-size: 2.5rem;
+  padding-top: 5rem;
+  line-height: 3rem;
+}
+
+#research h3{
+  border-top: solid 1px #003333;
+  margin-right: 4rem;
+}
+
+#research h2 strong{
+  font-weight: 800;
+  color:#ff6633;
+}
+
+#research img{
+  grid-column: 9/span 12;
+  object-fit: contain;
+
+}
+
+
+
+
+/*RESEARCH STYLES*/
+
+
+
+.warning{
+  height: 100vh;
+  width: 100vw;
+  background-color:#fffbf2;
+  visibility: visible;
+  position:fixed;
+}
+
+.warning p{
+  font-size:1.125rem;
+  line-height: 2rem;
+  font-weight: 800;
+  padding:10% 5%;
+
+}
+
+body{
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 1400px){
+  .warning{
+    visibility: hidden;
+  }
+
+  body{
+    visibility: visible;
+  }
+}
