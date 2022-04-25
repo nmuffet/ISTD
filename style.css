@@ -1037,7 +1037,7 @@ animation: wiggle .1s infinite alternate;
 
 }
 
-#research ol{
+#research ol .one{
   list-style-type:decimal;
   font-size: .8888rem;
 
