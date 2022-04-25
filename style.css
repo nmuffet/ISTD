@@ -1037,6 +1037,17 @@ animation: wiggle .1s infinite alternate;
 
 }
 
+#research ol{
+  list-style-type:decimal;
+  font-size: .8888rem;
+
+}
+
+#research li{
+ padding-bottom: .5rem;
+  
+}
+
 body{
   visibility: hidden;
 }
